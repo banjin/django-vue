@@ -92,7 +92,7 @@ python manage.py runserver 0.0.0.0:18888
 
 npm run dev
 
-但是有个新问题，使用VueJS的开发环境脱离了Django环境，访问Django写的API，出现了跨域问题，有两种方法解决，一种是在VueJS层上做转发（proxyTable)(关于转发的设置问题可以在另一个项目中查看)。另一种是在Django层注入header，这里我使用后者，用Django的第三方包 django-cors-headers 来解决跨域问题
+但是有个新问题，使用VueJS的开发环境脱离了Django环境，访问Django写的API，出现了跨域问题，有两种方法解决，一种是在VueJS层上做转发（proxyTable)[关于转发的设置问题可以在另一个项目中查看](https://github.com/banjin/intelligence)。另一种是在Django层注入header，这里我使用后者，用Django的第三方包 django-cors-headers 来解决跨域问题
 
 
 安装
